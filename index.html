@@ -3,8 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>Javascript 1</title>
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/modalwindow.css">
+    <script type="text/javascript" src="js/modalwindow.js"></script>
     <script type="text/javascript" src="js/game-of-life.js"></script>
     <script type="text/javascript" src="js/cell.js"></script>
     <script type="text/javascript" src="js/board.js"></script>
@@ -12,10 +14,22 @@
     <script type="text/javascript" src="js/app.js"></script>
   </head>
   <body>
+    <div id="modal" class="modal">
+    <div class="modal-content">
+    <div class="modal-header">
+    <h2>Game of Life</h2>
+    </div>
+    <div class="modal-body">
+      <p>Ingrese un la cantidad de filas y columnas</p>
+      <input type="text" name="input-number" value="">
+      </div>
+    <div class="modal-footer">
+      <button id="save" type="button" name="save">Save</button>
+    </div>
+  </div>
+</div>
     <div class="game">
-      <ul class="board">
-
-      </ul>
+      <ul class="board"></ul>
       <button id="play" type="button" name="play">Play</button>
       <button id="next" type="button" name="next">Next</button>
     </div>
